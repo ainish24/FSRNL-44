@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            function printton(){
+                let x=document.getElementById("inp").value;
+                var op=" ";
+                for(let i=1;i<=x;i++){
+                    op=op+" "+i; 
+                }
+                document.getElementById("output").innerHTML= "Printing upto "+x+" numbers <br>"+op;
+            }
+        </script>
+        <label for="name">Enter any number</label>
+        <input type="text" name="name" id="inp">
+        <input type="submit" value="click" id="btn" onclick="printton()">
+        <div id="output">
+        </div>
+    </body>
+</html>
