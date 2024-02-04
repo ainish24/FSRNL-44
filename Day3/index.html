@@ -1,0 +1,39 @@
+<html>
+    <style>
+        tr{
+            background-color: aqua;
+            height: 50px;
+            width: 400px;
+        }
+    </style>
+<body>
+    <script>
+        function read(){
+            var user=document.getElementById("uname").value;
+            var pwd=document.getElementById("pwd").value;
+            document.writeln("Welcome "+user);
+            document.writeln("Password is "+pwd);
+        }
+    </script>
+    <center>
+        <table border="2">
+            <tr>
+                <td>User Name</td>
+                <td><input type="text" name="uname" id="uname"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="pwd" id="pwd"></td>
+            </tr>
+           
+            <tr>
+                <td></td>
+                <td><input type="submit" onclick="read()" value="Click"></td>
+            </tr>
+           
+        </table>
+    </center>
+   
+</body>
+
+</html>
